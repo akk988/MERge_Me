@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  mergefunction4:
+    image: mergefunction4
+    build:
+      context: .
+      dockerfile: ./Dockerfile
