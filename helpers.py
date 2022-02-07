@@ -17,6 +17,10 @@ class Merge(object):
         # sorting the intervals using quicksort method
         self.quicksort(intervals, 0, len(intervals)-1)
 
+        # printing out the sorted intervals
+        # for i in intervals:
+        #    print(i[0], i[1])
+
         # defining an array called stack to store the merged intervals
         stack = []
 
@@ -31,3 +35,11 @@ class Merge(object):
 
     # define a method which partitions the given array around a picked pivot (partition_index).
     def quicksort(self, array, start, end):
+
+        # Creating new instance of the class
+        #mer = Merge()
+        #intervalls = input()
+        #print('Input, ' + intervalls)
+        # Calling merge method of class Merge and passing in the intervals
+        #print('Output, ' + mer.merge([intervalls]))
+        #print(mer.merge([[1, 3], [1, 5], [3, 7], [11, 14], [8, 10], [15, 18]]))
