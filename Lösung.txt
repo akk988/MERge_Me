@@ -1,0 +1,40 @@
+﻿Coding Task 2 - Lösung
+
+
+Rahmenbedingungen:
+Bitte die Aufgabe selbstständig und allein lösen, --> erledigt
+natürlich darf dabei Literatur und / oder das Internet benutzt werden.
+Bitte teilen Sie uns Ihre Bearbeitungszeit mit. --> ca. 9 Stunden
+Die Lösung hätten wir gern als GitHub Projekt. --> erledigt als GitHub Repo
+Die Programmiersprache ist frei wählbar, wobei eine ‘gewöhnliche’ Sprache bevorzugt wäre. --> Python
+Das Resultat muss von uns gebaut und ausgeführt werden können. Bitte entsprechende build-scripte oder Makefiles bereitstellen. --> Docker Container
+Eigene Annahmen und wichtige Implementierungsdetails bitte klar kommentieren. --> erledigt
+Eventuelle sinnvolle Zwischenergebnisse dürfen gern als separater Git commit vorliegen. --> erledigt
+Genauso wichtig wie das lauffähige Programm ist die Dokumentation (readme und code comments) der Lösungsidee und der einzelnen Programmteile und Tests. --> erledigt
+
+
+Das Hauptziel ist es das wir erleben wie Sie Software in einem professionellen Umfeld entwickeln. Die gesamte Bearbeitungsdauer sollte max. 1-2 Tage sein.
+
+Aufgabe:
+
+Implementieren Sie eine Funktion MERGE die eine Liste von Intervallen entgegennimmt und als Ergebnis wiederum eine Liste von Intervallen zurückgibt. Im Ergebnis sollen alle sich überlappenden Intervalle gemerged sein. Alle nicht überlappenden Intervalle bleiben unberührt.
+
+Beispiel:
+Input: [25,30] [2,19] [14, 23] [4,8]  Output: [2,23] [25,30] --> erledigt
+
+1. Wie ist die Laufzeit Ihres Programms ?
+Die Zeitdauer, die das Programm zur Bewältigung der Merge-aufgabe benötigt (die absolute Laufzait), habe ich für die gegebene Eingabe in zwei Umgebungen gemessen.
+Die absolute Laufzeit auf einem VM, Ubuntu x86_64 GNU/Linux, beträgt:  0.0008698925375938416 Sekunden
+Die absolute Laufzeit auf einem PC, MS Windows 10 LTSC x64 mit 2.6 GHz CPU und 16GB RAM, beträgt: 0.0002486000012140721 Sekunden
+Die Laufzeit wächst linear mit der Größe der Eingabe, da das Quicksort verwendet wird.
+
+
+2. Wie kann die Robustheit sichergestellt werden, vor allem auch mit Hinblick auf sehr große
+Eingaben ?
+Die Robustheit kann mit einem zeiteffizienter Sortieralgorithmus, die eine lineare Komplexität hat, wie z.B. das Merge-Sort bzw. Quicksort mit O(n log(n)), sichergestellt. Zusäzlich spiel der Rechenleistung des Computers / Servers eine wichtige Rolle.
+Mergesort und Quicksort sind sehr effiziente Sortieralgorithmen. Sie basieren auf dem Teile-und-Herrsche-Ansatz.
+
+
+3. Wie verhält sich der Speicherverbrauch ihres Programms ?
+Um das Verhalten des Speicherverbrauchs des Programms zu messen, wurde die Python-Bibliothek psutil verwendet, die eine Schnittstelle zum Abrufen von Informationen über laufende Prozesse bietet. Es bietet komfortable, schnelle und plattformübergreifende Funktionen für den Zugriff. Eine Funktion aus der Bibliothek gibt den Speicherverbrauch des Sortier- und Zusammenführungsprozesses in MiB zurück. Der gemessene Wert des Prozesses betrug 12,12890625 MiB. 
+12.12890625  MiB
