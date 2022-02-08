@@ -1,4 +1,4 @@
-#import input_output as ip
+# Defining the methods for sorting and merging
 
 # Create class called Merge inheriting from  the upper level class Object
 class Merge(object):
@@ -9,10 +9,6 @@ class Merge(object):
 
     # define method called merge with two or more intervals as arguement and returns merged intervals as a stack
     def merge(self, intervals):
-        """
-        :type intervals: List[Interval]
-        :rtype: List[Interval]
-        """
         # return an empty array if no intervals where entered
         if len(intervals) == 0:
             return []
@@ -44,7 +40,7 @@ class Merge(object):
                 stack.append(intervals[i])
         return stack
 
-    # define a method which takes an array and a range (e.g. from 0 to 5) and return a pivot-index to be used in the quicksort method
+    # define a method which takes an array and a range (e.g. from 0 to 5) and return a pivot-index to be used in the Quicksort method
     def partition(self, array, start, end):
         # initializing pivot's index equal to the start of the range (e. g. 0)
         pivot_index = start

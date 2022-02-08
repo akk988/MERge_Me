@@ -1,8 +1,8 @@
 version: '3.4'
 
 services:
-  mergefunction4:
-    image: mergefunction4
+  mergefunction4dockerlaufzeitspeicher:
+    image: mergefunction4dockerlaufzeitspeicher
     build:
       context: .
       dockerfile: ./Dockerfile
