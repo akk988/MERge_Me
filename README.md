@@ -56,14 +56,14 @@ The measured value of memory consumption of the sorting and merging process was 
 
 # Sources
 
-https://docs.python.org/
+- https://docs.python.org/
 
-https://realpython.com
+- https://realpython.com
 
-https://openbook.rheinwerk-verlag.de/python/
+- https://openbook.rheinwerk-verlag.de/python/
 
-https://andreaheilrath.github.io
+- https://andreaheilrath.github.io
 
-https://www.geeksforgeeks.org/quick-sort/
+- https://www.geeksforgeeks.org/quick-sort/
 
-https://stackoverflow.com
+- https://stackoverflow.com
