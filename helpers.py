@@ -58,12 +58,3 @@ class Merge(object):
             partition_index = self.partition(array, start, end)
             self.quicksort(array, start, partition_index-1)
             self.quicksort(array, partition_index + 1, end)
-
-
-# Creating new instance of the class
-#mer = Merge()
-#intervalls = input()
-#print('Input, ' + intervalls)
-# Calling merge method of class Merge and passing in the intervals
-#print('Output, ' + mer.merge([intervalls]))
-#print(mer.merge([[1, 3], [1, 5], [3, 7], [11, 14], [8, 10], [15, 18]]))

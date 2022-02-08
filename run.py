@@ -3,7 +3,6 @@
 import constants as const
 import helpers as help
 import timeit
-import os
 import psutil
 
 
@@ -14,14 +13,11 @@ def run():
     print('Zusammengeführte Intervalle: ', MERge.merge(const.INTERVALS))
 
 
-# running the method run directly
+# running the method "run" directly, calculating run time and memory consumption
 if __name__ == '__main__':
 
     # calculates the run time of the program
     start = timeit.default_timer()
-
-    # runs the program to merge intervals
-    # run()
 
     # runs the program to merge intervals and calculate RAM usage
     process = psutil.Process(run())
