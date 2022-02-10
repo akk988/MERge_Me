@@ -54,6 +54,21 @@ Mergesort and Quicksort are very efficient sorting algorithms. They are based on
 
 The measured value of memory consumption of the sorting and merging process was **12.12890625 MiB**
 
+# TODOs
+
+- Add Tests for class Merge and its functions
+- Add deployment.yml for K8s
+- Add travis.yml for CI
+- Add prerequisites to the documentation
+- Add MAINTAINERS.md, CODE_OF_CONDUCT.md & contributers.md
+- Add template for pull-request
+- Import only needed funtions from timeit & putil
+- Try out other timing approches (e.g. class, context manager, decorator)
+- Restructure the project
+- Try out other approches for selecting a Pivot (random, median, ..)
+- Research & Try out further sorting algorithms
+- include further open source components if needed
+
 # Sources
 
 - https://docs.python.org/
